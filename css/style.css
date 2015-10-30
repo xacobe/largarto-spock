@@ -9,7 +9,7 @@
 
 .oponent-window,
 .player-window {
-  font-size: 15rem;
+  font-size: 9em;
   text-align: center;
 }
 
@@ -22,3 +22,12 @@
 ******************/
 
 .main-content { background: none;}
+
+.btn-default:hover,
+.btn-default.focus,
+.btn-default:focus,
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    background-color: #F9FFA4;
+}

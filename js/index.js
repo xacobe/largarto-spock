@@ -5,7 +5,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
   // Hacer un random para definir la variable suTurno
   var suTurno = ["Piedra", "Papel", "Tijera", "Lagarto", "Spock"][Math.floor(Math.random() * 5)];
   var bothTurno = miTurno + suTurno;
-  var resultWhy = "still no content no resultWhy variable";
+  var resultWhy = "still no content no result en Why variable";
 
   // ******** Posible resultados ******** //
 
@@ -32,7 +32,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
 
 
     result = "Empate";
-    resultWhy = "parece que estabais pensando lo mismo...";
+    resultWhy = "Hey spock! sin telepatía";
   }
 
   /*
@@ -102,17 +102,35 @@ function turno(miTurno, suTurno, result, resultWhy) {
 
     var resultWhy = "El papel envuelve a la piedra";
   } else if (
-    bothTurno == "PapelTijera" ||
-    bothTurno == "TijeraPapel") {
+    bothTurno == "PiedraLagarto" ||
+    bothTurno == "LagartoPiedra") {
 
-    var resultWhy = "La tijera corta el papel";
-  } else if (
+    var resultWhy = "La piedra aplasta al lagarto";
+  }
+  else if (
     bothTurno == "PiedraTijera" ||
     bothTurno == "TijeraPiedra") {
 
     var resultWhy = "La piedra rompe las tijeras";
   }
+  else if (
+    bothTurno == "PapelTijera" ||
+    bothTurno == "TijeraPapel") {
 
+    var resultWhy = "La tijera corta el papel";
+  }
+  else if (
+    bothTurno == "PapelLagarto" ||
+    bothTurno == "LagartoPapel") {
+
+    var resultWhy = "El lagarto come al papel";
+  }
+  else if (
+    bothTurno == "TijeraLagarto" ||
+    bothTurno == "LagartoTijera") {
+
+    var resultWhy = "La tijera decapita al lagarto";
+  }
   else if (
     bothTurno == "SpockTijera" ||
     bothTurno == "TijeraSpock") {
