@@ -1,1 +1,18 @@
-.main-content { background: #babada;}
+
+/******************
+* Layout
+******************/
+.container {
+  width: 660px
+}
+
+.oponent-window,
+.player-window {
+  font-size: 15rem;
+  text-align: center;
+}
+/******************
+* Theme
+******************/
+
+.main-content { background: none;}
