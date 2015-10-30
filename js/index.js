@@ -21,14 +21,14 @@ function turno(miTurno, suTurno, result, resultWhy) {
     playerImg.classList.remove("bg-success");
     playerImg.classList.remove("bg-danger");
     
-    var oponenImg = document.querySelector("#js-oponent-img");
-    oponenImg.classList.add("bg-warning");
-    oponenImg.classList.remove("bg-success");
-    oponenImg.classList.remove("bg-danger");
+    var oponentImg = document.querySelector("#js-oponent-img");
+    oponentImg.classList.add("bg-warning");
+    oponentImg.classList.remove("bg-success");
+    oponentImg.classList.remove("bg-danger");
 
 
     result = "Empate";
-    resultWhy = "parece que estabais pensando lo mismo...";
+    var resultWhy = "parece que estabais pensando lo mismo...";
   }
 
   // Has Perdido!
@@ -83,9 +83,9 @@ function turno(miTurno, suTurno, result, resultWhy) {
     result = "Has Ganado";
   } else(result = "Whaaatt!!!")
 
-  /********************
+  /*****************************************
    * Texto explicativo del resultado 
-   *********************/
+   *****************************************/
 
   if (
     bothTurno == "PiedraPapel" ||
