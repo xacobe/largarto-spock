@@ -4,13 +4,10 @@
 ******************/
 .container,
 .container-fluid {
-  max-width: 660px
+  max-width: 960px
 }
 
-.header-content {
- height: 7vh;
- margin-top: 3vh;
-}
+.header-content {}
 
 .oponent-window,
 .player-window {
@@ -28,7 +25,7 @@
 * Theme
 ******************/
 
-.main-content { background: none;height: 37vh;margin-top: 10vh;}
+.main-content {}
 
 .panel-primary {
   border: none;
