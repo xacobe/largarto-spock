@@ -30,6 +30,20 @@
 
 .main-content { background: none;height: 37vh;margin-top: 10vh;}
 
+.panel-primary {
+  border: none;
+}
+
+.versus-window {
+    background-color: #88C0D6;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 20px;
+    width: 85px;
+    margin: 190px 12px 12px 11px;
+}
+
 .btn-default:hover,
 .btn-default.focus,
 .btn-default:focus,
@@ -56,4 +70,10 @@
     background-color: #f2dede;
     border: solid #E47C7C;
     color: #E47C7C;
+}
+
+.bg-warning {
+    background-color: #FFF0A4;
+    color: #E2C843;
+    border: solid #E2C843;
 }
