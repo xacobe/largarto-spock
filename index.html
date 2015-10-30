@@ -26,13 +26,42 @@
 
   <div class="header-content nav row">
     <div class="col-xs-11 h1"> Piedra, papel, tijera, lagarto, spock</div>
-    <a class="btn btn-info col-xs-1" href="#">?</a>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info col-md-1" data-toggle="modal" data-target="#myModal">
+    <i class="fa fa-info-circle"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+         </div>
+         <div class="modal-body lead">
+          Tijeras cortan papel, papel envuelve piedra, piedra aplasta lagarto, 
+          lagarto envenena spock, spock aplasta tijeras, tijeras decapitan lagarto,
+          lagarto se come papel, papel desaprueba a spock, spock desintegra piedra 
+          y como siempre piedra aplasta tijeras
+          <iframe width="560" height="315" 
+                  src="https://www.youtube.com/embed/3FAnlDUDbLA" 
+                  frameborder="0" allowfullscreen>
+          </iframe> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 
   <div class="main-content row">
 
     <!-- Player window -->
-    <div class="player-window panel panel-info col-xs-5">
+    <div class="player-window panel panel-primary col-xs-5">
       <h3 class="panel-heading">Player</h3>
       <div class="panel-body" id="js-player-img"><i class="fa fa-hand-o-right"></i>
       </div>
@@ -44,7 +73,7 @@
     </div>
 
     <!-- Oponent window -->
-    <div class="oponent-window panel panel-info col-xs-5">
+    <div class="oponent-window panel panel-primary col-xs-5">
       <h3 class="panel-heading">Oponente</h3>
       <div class="panel-body" id="js-oponent-img"><i class="fa fa-hand-o-left"></i>
       </div>
