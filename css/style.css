@@ -2,8 +2,9 @@
 /******************
 * Layout
 ******************/
-.container {
-  width: 660px
+.container,
+.container-fluid {
+  max-width: 660px
 }
 
 .oponent-window,
@@ -11,6 +12,11 @@
   font-size: 15rem;
   text-align: center;
 }
+
+.btn-group-lg>.btn, .btn-lg {
+  font-size: 5em;
+}
+
 /******************
 * Theme
 ******************/

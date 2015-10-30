@@ -5,10 +5,14 @@ function turno(miTurno, suTurno, result, resultWhy) {
   // Hacer un random para definir la variable suTurno
   var suTurno = ["Piedra", "Papel", "Tijera", "Lagarto", "Spock"][Math.floor(Math.random() * 5)];
   var bothTurno = miTurno + suTurno;
+  var resultWhy = "still no content no resultWhy variable";
 
   // ******** Posible resultados ******** //
 
-  // Empate
+  /*
+   * Empate
+   */ 
+
   if (
     bothTurno == "PiedraPiedra" ||
     bothTurno == "TijeraTijera" ||
@@ -31,7 +35,9 @@ function turno(miTurno, suTurno, result, resultWhy) {
     resultWhy = "parece que estabais pensando lo mismo...";
   }
 
-  // Has Perdido!
+  /*
+   * Has Perdido!
+   */
   else if (
     bothTurno == "PiedraPapel" ||
     bothTurno == "PiedraSpock" ||
@@ -57,7 +63,10 @@ function turno(miTurno, suTurno, result, resultWhy) {
     result = "Has Perdido!";
   }
 
-  // Has Ganado!
+  /*
+   * Has Ganado!
+   */
+
   else if (
     bothTurno == "PiedraTijera" ||
     bothTurno == "PiedraLagarto" ||
@@ -130,7 +139,8 @@ function turno(miTurno, suTurno, result, resultWhy) {
     bothTurno == "LagartoSpock") {
 
     var resultWhy = "El lagarto envenena a Spock";
-  } else(resultWhy = "Falta explicación para" + bothTurno)
+  }
+
 
   /********** Asignando imagenes la Player ****/
   if (
