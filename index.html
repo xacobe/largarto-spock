@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Pen by xacobe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- Iconfont -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- Version con botones en vez de dropdown menu -->
+<!-- ******* Content -->
+
+<!-- <select id="selector" onchange="turno()"> -->
+
+<div class="container">
+  <div class="header row">
+    <div class="col-xs-11 h1"> Piedra, papel, tijera, lagarto, spock</div>
+    <a class="btn btn-info col-xs-1" href="#">?</a>
+  </div>
+
+  <div class="main-content row">
+
+    <!-- Player window -->
+    <div class="player-window panel panel-info col-xs-5">
+      <h3 class="panel-heading">Player</h3>
+      <div class="panel-body" id="js-player-img"><i class="fa fa-hand-o-right"></i>
+      </div>
+    </div>
+
+    <!-- Versus window -->
+    <div class="versus-window col-xs-2 h1 text-center">
+      VS
+    </div>
+
+    <!-- Oponent window -->
+    <div class="oponent-window panel panel-info col-xs-5">
+      <h3 class="panel-heading">Oponente</h3>
+      <div class="panel-body" id="js-oponent-img"><i class="fa fa-hand-o-left"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="js-infobox" class="info-box text-center jumbotron col-xs-12">
+    <span id="js-infobox-details">Selecciona una opción y...</span>
+    <div id="js-infobox-main" class="h2"> ...Dale a jugar!</div>
+
+
+    <div class="player-menu btn-group">
+      <!-- https://fortawesome.github.io/Font-Awesome/icons/ -->
+      <button class="btn btn-default btn-lg" value="Piedra" onclick="turno(this)"><i class="fa fa-hand-rock-o"></i>
+      </button>
+
+      <button class="btn btn-default btn-lg" value="Papel" onclick="turno(this)"><i class="fa fa-hand-paper-o"></i>
+      </button>
+
+      <button class="btn btn-default btn-lg" value="Tijera" onclick="turno(this)">
+        <i class="fa fa-hand-scissors-o"></i>
+      </button>
+
+      <button class="btn btn-default btn-lg" value="Lagarto" onclick="turno(this)">
+        <i class="fa fa-hand-lizard-o"></i>
+      </button>
+
+      <button class="btn btn-default btn-lg" value="Spock" onclick="turno(this)">
+        <i class="fa fa-hand-spock-o"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
