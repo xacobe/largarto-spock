@@ -20,6 +20,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
     bothTurno == "SpockSpock" ||
     bothTurno == "PapelPapel") {
 
+    /* Añadiendo algunos efectos segun el resultado */ 
     var playerImg = document.querySelector("#js-player-img");
     playerImg.classList.add("bg-warning");
     playerImg.classList.remove("bg-success");
@@ -30,7 +31,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
     oponenImg.classList.remove("bg-success");
     oponenImg.classList.remove("bg-danger");
 
-
+    /* Definiendo variables de textos  segun resultado*/
     result = "Empate";
     resultWhy = "Hey spock! sin telepatía";
   }
@@ -50,6 +51,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
     bothTurno == "SpockLagarto" ||
     bothTurno == "SpockPapel") {
 
+    /* Añadiendo algunos efectos segun el resultado */ 
     var playerImg = document.querySelector("#js-player-img");
     playerImg.classList.add("bg-danger");
     playerImg.classList.remove("bg-success");
@@ -79,6 +81,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
     bothTurno == "SpockTijera" ||
     bothTurno == "SpockPiedra") {
 
+    /* Añadiendo algunos efectos segun el resultado */ 
     var playerImg = document.querySelector("#js-player-img");
     playerImg.classList.add("bg-success");
     playerImg.classList.remove("bg-warning");

@@ -1,123 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Piedra, papel, tijera</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-    <!-- Iconfont -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, papel, tijera</title>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron|Bangers' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!-- Iconfont -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">    
-  </head>
-
-  <body>
-
-    <!-- Version con botones en vez de dropdown menu -->
-<!-- ******* Content -->
-
-<!-- <select id="selector" onchange="turno()"> -->
-
-<div class="page">
-
-  <div class="header-wrapper">
-  <div class="header-content container-fluid">
-
-    <div class="col-xs-11 h1"> Lagarto-Spock</div>
-
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-info col-md-1" data-toggle="modal" data-target="#myModal">
-    <i class="fa fa-info-circle"></i>
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Instrucciones</h4>
-         </div>
-         <div class="modal-body lead">
-          <p class="lead jumbotron col-md-12"> Tijeras cortan papel, papel envuelve piedra, piedra aplasta lagarto, 
-          lagarto envenena spock, spock aplasta tijeras, tijeras decapitan lagarto,
-          lagarto se come papel, papel desaprueba a spock, spock desintegra piedra 
-          y como siempre piedra aplasta tijeras </p>
-          <iframe width="560" height="315" 
-                  src="https://www.youtube.com/embed/3FAnlDUDbLA" 
-                  frameborder="0" allowfullscreen>
-          </iframe> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-
-
+<body>
+  <div class="page">
+    <div class="header-wrapper">
+      <div class="header-content container-fluid">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-info btn-sm col-md-1" data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-info-circle">
+        </i>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Instrucciones</h4>
+            </div>
+            <div class="modal-body lead">
+              <p class="lead jumbotron col-md-12"> Tijeras cortan papel, papel envuelve piedra, piedra aplasta lagarto, lagarto envenena spock, spock aplasta tijeras, tijeras decapitan lagarto, lagarto se come papel, papel desaprueba a spock, spock desintegra piedra y como siempre piedra aplasta tijeras </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3FAnlDUDbLA" frameborder="0" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
-</div>
-  </div>
-  <div class="main-content-wrapper">
-  <div class="main-content container-fluid">
-
-    <!-- Player window -->
-    <div class="player-window panel panel-primary col-xs-5">
-      <h3 class="panel-heading">Player</h3>
-      <div class="panel-body" id="js-player-img"><i class="fa fa-hand-o-right"></i>
+    <div class="main-content-wrapper">
+      <div class="main-content container-fluid">
+        <!-- Player window -->
+        <div class="player-window panel panel-primary col-xs-5">
+          <h3 class="panel-heading">Player</h3>
+          <div class="panel-body" id="js-player-img"><i class="fa fa-hand-o-right"></i>
+          </div>
+        </div>
+        <!-- Versus window -->
+        <div class="versus-window col-xs-2 h1 text-center">
+          VS
+        </div>
+        <!-- Oponent window -->
+        <div class="oponent-window panel panel-primary col-xs-5">
+          <h3 class="panel-heading">Oponente</h3>
+          <div class="panel-body" id="js-oponent-img"><i class="fa fa-hand-o-left"></i>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Versus window -->
-    <div class="versus-window col-xs-2 h1 text-center">
-      VS
+    <div id="js-infobox" class="infobox jumbotron text-center">
+      <span id="js-infobox-details" class="infobox-details h2">Selecciona una opción y...</span>
+      <div id="js-infobox-main" class="infobox-main h1"> ...Dale a jugar!</div>
     </div>
-
-    <!-- Oponent window -->
-    <div class="oponent-window panel panel-primary col-xs-5">
-      <h3 class="panel-heading">Oponente</h3>
-      <div class="panel-body" id="js-oponent-img"><i class="fa fa-hand-o-left"></i>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div id="js-infobox" class="info-box jumbotron text-center">
-    <span id="js-infobox-details" class="h2">Selecciona una opción y...</span>
-    <div id="js-infobox-main" class="h1"> ...Dale a jugar!</div>
-  </div>
-  <div class="player-menu container-fluid text-center">
+    <div class="player-menu container-fluid text-center">
       <!-- https://fortawesome.github.io/Font-Awesome/icons/ -->
       <button class="btn btn-info btn-lg" value="Piedra" onclick="turno(this)"><i class="fa fa-hand-rock-o"></i>
       </button>
-
       <button class="btn btn-primary btn-lg" value="Papel" onclick="turno(this)"><i class="fa fa-hand-paper-o"></i>
       </button>
-
       <button class="btn btn-info btn-lg" value="Tijera" onclick="turno(this)">
         <i class="fa fa-hand-scissors-o"></i>
       </button>
-
       <button class="btn btn-primary btn-lg" value="Lagarto" onclick="turno(this)">
         <i class="fa fa-hand-lizard-o"></i>
       </button>
-
       <button class="btn btn-info btn-lg" value="Spock" onclick="turno(this)">
         <i class="fa fa-hand-spock-o"></i>
       </button>
-
     </div>
-</div>
-    
-        <script src="js/index.js"></script>
+  </div>
+  <script src="js/index.js"></script>
+</body>
 
-    
-    
-    
-  </body>
 </html>
