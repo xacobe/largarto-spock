@@ -4,7 +4,8 @@
 ******************/
 .container,
 .container-fluid {
-  max-width: 960px
+  max-width: 960px;
+  /* font-family: 'Orbitron', sans-serif; */
 }
 
 .header-content {}
@@ -12,20 +13,26 @@
 .oponent-window,
 .player-window {
   font-size: 15em;
+  /* font-family: 'Bangers', cursive; */
   text-align: center;
   border-radius: 40px;
   padding: 0px;
 }
 
+.jumbotron {
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
 .btn-group-lg>.btn, .btn-lg {
-  font-size: 6em;
+  font-size: 10em;
 }
 
 /******************
 * Theme
 ******************/
 
-.main-content {}
+.main-content, .infobox {}
 
 .panel-primary {
   border: none;
@@ -40,6 +47,12 @@
     width: 85px;
     margin: 190px 12px 12px 11px;
 }
+
+.infobox {}
+.infobox-main {
+}
+
+.infobox-details {}
 
 .btn-default:hover,
 .btn-default.focus,
