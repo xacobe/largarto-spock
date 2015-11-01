@@ -1,3 +1,11 @@
+var miMarcador = 1;
+var suMarcador = 1;
+var miTurno = 0;
+var suTurno = 0;
+var result = 0;
+var bothTurno = 0;
+var resultWhy = 0;
+
 function turno(miTurno, suTurno, result, resultWhy) {
   // Difinir la variable miTurno como value del botón 
   miTurno = miTurno.value;
@@ -63,7 +71,8 @@ function turno(miTurno, suTurno, result, resultWhy) {
     oponentImg.classList.remove("bg-warning");
 
     result = "Has Perdido!";
-  }
+
+    suMarcador += 1;   }
 
   /*
    * Has Ganado!
@@ -91,6 +100,8 @@ function turno(miTurno, suTurno, result, resultWhy) {
     oponentImg.classList.remove("bg-success");
     oponentImg.classList.remove("bg-warning");
     oponentImg.classList.add("bg-danger");
+
+    miMarcador += 1;
 
     result = "Has Ganado";
   } else(result = "Whaaatt!!!")
@@ -162,8 +173,7 @@ function turno(miTurno, suTurno, result, resultWhy) {
     var resultWhy = "El lagarto envenena a Spock";
   }
 
-
-  /********** Asignando imagenes la Player ****/
+  /********** Asignando imagenes al Player ****/
   if (
     miTurno == "Piedra") {
 
@@ -208,6 +218,9 @@ function turno(miTurno, suTurno, result, resultWhy) {
 
     var suTurno = "<i class='fa fa-hand-lizard-o'></i>";
   }
+
+  document.getElementById("js-player-marcador").innerHTML = miMarcador;
+  document.getElementById("js-oponent-marcador").innerHTML = suMarcador;
 
   document.getElementById("js-player-img").innerHTML = miTurno;
   document.getElementById("js-oponent-img").innerHTML = suTurno;
